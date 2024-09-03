@@ -1,7 +1,19 @@
+import 'package:calculator_provider/calculator_page.dart';
+import 'package:calculator_provider/calculators.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => SquareCalculator()),
+        ChangeNotifierProvider(create: (_) => TriangleCalculator()),
+        ChangeNotifierProvider(create: (_) => RectangleCalculator()),
+      ],
+      child: const MainApp(),
+    ),
+  );
 }
 
 class MainApp extends StatelessWidget {
@@ -9,12 +21,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: CalculatorPage(), 
+        theme: ThemeData.light(),
     );
   }
 }
