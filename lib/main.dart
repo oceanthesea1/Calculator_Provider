@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'bmi_model.dart';
+import 'bmi_calculator.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(
+    //router
+    ChangeNotifierProvider(
+      create: (context) => BmiModel(),
+      child: const MyApp(),
+    ),
+  );
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      title: 'BMI Calculator',
+      home: BmiCalculator(),
     );
   }
 }
