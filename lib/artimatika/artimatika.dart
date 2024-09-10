@@ -1,7 +1,7 @@
-import 'package:calculator_provider/artimatika/OperationButton.dart';
+import 'package:calculator_provider/artimatika/operation_button.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'CalculatorModel.dart';
+import 'calculator_model.dart';
 
 class Aritmatika extends StatefulWidget {
   const Aritmatika({super.key});
@@ -36,10 +36,10 @@ class _AritmatikaState extends State<Aritmatika> {
             TextField(
               controller: _firstNumberController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Angka Pertama',
                 border: OutlineInputBorder(),
-                contentPadding: const EdgeInsets.symmetric(horizontal: 16.0),
+                contentPadding: EdgeInsets.symmetric(horizontal: 16.0),
               ),
               onChanged: (value) {
                 calculator.setFirstNumber(double.tryParse(value) ?? 0);
@@ -49,10 +49,10 @@ class _AritmatikaState extends State<Aritmatika> {
             TextField(
               controller: _secondNumberController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Angka Kedua',
                 border: OutlineInputBorder(),
-                contentPadding: const EdgeInsets.symmetric(horizontal: 16.0),
+                contentPadding: EdgeInsets.symmetric(horizontal: 16.0),
               ),
               onChanged: (value) {
                 calculator.setSecondNumber(double.tryParse(value) ?? 0);

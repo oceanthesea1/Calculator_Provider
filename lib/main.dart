@@ -1,4 +1,4 @@
-import 'package:calculator_provider/artimatika/CalculatorModel.dart';
+import 'package:calculator_provider/artimatika/calculator_model.dart';
 import 'package:calculator_provider/artimatika/artimatika.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
