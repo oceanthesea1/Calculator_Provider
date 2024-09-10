@@ -6,11 +6,11 @@ class OperationButton extends StatelessWidget {
   final bool isClear;
 
   const OperationButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onPressed,
     this.isClear = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
