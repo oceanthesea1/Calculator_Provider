@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'screens/balokpage.dart';
-import 'screens/bolapage.dart';
-import 'screens/kerucutpage.dart';
-import 'screens/kubuspage.dart';
-import 'screens/limaspage.dart';
-import 'screens/prismapage.dart';
-import 'screens/tabungpage.dart';
+import 'balokpage.dart';
+import 'bolapage.dart';
+import 'kubuspage.dart';
 
 class MenuScreen extends StatelessWidget {
   @override
@@ -19,11 +15,7 @@ class MenuScreen extends StatelessWidget {
         children: [
           _buildMenuButton(context, 'Balok', BalokPage()),
           _buildMenuButton(context, 'Bola', BolaPage()),
-          _buildMenuButton(context, 'Kerucut', KerucutPage()),
           _buildMenuButton(context, 'Kubus', KubusPage()),
-          _buildMenuButton(context, 'Limas', LimasPage()),
-          _buildMenuButton(context, 'Prisma', PrismaPage()),
-          _buildMenuButton(context, 'Tabung', TabungPage()),
         ],
       ),
     );
