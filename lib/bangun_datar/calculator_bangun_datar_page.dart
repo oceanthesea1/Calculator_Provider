@@ -17,7 +17,13 @@ class _CalculatorBDPageState extends State<CalculatorBDPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Calculator 2D"),
+        title: const Text(
+        'Bangun Datar',
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 25.0,
+          ),
+        ),
       ),
       body: Column(
         children: [

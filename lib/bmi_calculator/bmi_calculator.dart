@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import "package:provider/provider.dart";
 import 'bmi_model.dart';
 import 'widgets/text_field_provider.dart';
 import 'widgets/text_provider.dart';
@@ -14,7 +14,15 @@ class BmiCalculator extends StatelessWidget {
     final bmiModel = Provider.of<BmiModel>(context);
 
     return Scaffold(
-      appBar: const AppBarProvider(title: 'BMI Calculator'),
+      appBar: AppBar(
+        title: const Text(
+         'Kalkulator Aritmatika',
+          style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 25.0,
+          ),
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
