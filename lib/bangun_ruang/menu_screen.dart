@@ -8,7 +8,13 @@ class MenuScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pilih Menu'),
+        title: const Text(
+        'Bangun Ruang',
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 25.0,
+        ),
+      ),
       ),
       body: ListView(
         padding: EdgeInsets.all(16),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:calculator_provider/bangun_ruang//bangun_ruang_model.dart';
+import 'package:calculator_provider/bangun_ruang/bangun_ruang_model.dart';
 
 class BalokPage extends StatefulWidget {
   @override
