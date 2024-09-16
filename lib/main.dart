@@ -16,7 +16,6 @@ void main() {
         ChangeNotifierProvider(create: (context) => SquareCalculator()),
         ChangeNotifierProvider(create: (context) => RectangleCalculator()),
         ChangeNotifierProvider(create: (context) => TriangleCalculator()),
-
       ],
       child: const MyApp(),
     ),

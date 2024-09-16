@@ -14,15 +14,7 @@ class BmiCalculator extends StatelessWidget {
     final bmiModel = Provider.of<BmiModel>(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-         'Kalkulator Aritmatika',
-          style: TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 25.0,
-          ),
-        ),
-      ),
+      appBar: const AppBarProvider(title: 'BMI Calculator'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
